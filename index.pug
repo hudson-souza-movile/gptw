@@ -3,8 +3,9 @@ html(lang='en')
 	head
 		meta(charset='UTF-8')
 		meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
-		script(src="https://use.typekit.net/vgm6kkx.js")
-		script(try{Typekit.load({ async: true });}catch(e){})
+		script(src='https://use.typekit.net/vgm6kkx.js')
+		script.
+			try{Typekit.load({ async: true });}catch(e){}
 		link(rel="stylesheet", href="css/style.css")
 		title Movile | Great Place to Work
 	body
@@ -13,4 +14,52 @@ html(lang='en')
 			img(src="img/movile-logo.png")
 		.container
 			section.intro
-				h1 Somos uma holding global
+				div
+					.chamada
+						h1 Somos uma holding global
+						p A Movile é líder global em desenvolvimento de plataformas de comércio e conteúdo móvel
+					.holding-logos
+				div
+					.map
+					.numbers
+						h2 1500 Movilian@s*
+						h2
+							span 15 
+							| escritórios em
+						h2
+							span +6 
+							| países
+						label *Nesta pesquisa somos 300 Movilian@s = Movile Holding, Mobile Content & PlayKids
+		section.future
+			.future-background
+			.title
+				h3 Acreditamos que a Internet do futuro é 
+					span mobile
+					| .
+				label Tudo que fazemos é para algo maior: as pessoas.
+			.videos
+				div
+					a.active-video(href="javascript:")
+						img(src="img/video.png")
+					div.card
+						h4.card-title o que queremos
+						.underline-accent
+						p.card-content
+							| Melhorar a vida de 
+							span 1 bilhão de pessoas 
+							| através dos nossos apps
+				div
+					div.card
+						h4.card-title o que queremos
+						.underline-accent
+						p.card-content
+							| Melhorar a vida de 
+							span 1 bilhão de pessoas 
+							| através dos nossos apps
+					a.active-video(href="javascript:")
+						img(src="img/video.png")
+			.title
+				h3 Acreditamos que a Internet do futuro é 
+					span mobile
+					| .
+				label Tudo que fazemos é para algo maior: as pessoas.
