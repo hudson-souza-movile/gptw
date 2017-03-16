@@ -9,6 +9,7 @@ html(lang='en')
 		link(rel="stylesheet", href="css/style.css")
 		title Movile | Great Place to Work
 	body
+		include pug-templates/pilar_card
 		header
 			a.menu(href="javascript:") MENU
 			img(src="img/movile-logo.png")
@@ -64,11 +65,34 @@ html(lang='en')
 				label Em 2016, mais uma vez, trabalhamos com um único foco:
 				h3 
 					span tornar a vida d@s noss@s Movilian@s melhor!
-				.underline.underline-third-accent
+				.underline.underline-center.underline-third-accent
 			.featured-video
 				a.active-video(href="javascript:")
 					img(src="img/video.png")
-
+		section.pilares
+			label Muito mais do que processos tradicionais, a Movile se preocupa com a experiência do Movilian@s!
+				h3 
+					span Conheça nossos pilares:
+			.underline.underline-center.underline-second-accent
+			+pilarCard('contratar')
+			+pilarCard('receber')
+			+pilarCard('inspirar')
+			+pilarCard('falar')
+			+pilarCard('escutar')
+			+pilarCard('agradecer')
+			+pilarCard('desenvolver')
+			+pilarCard('cuidar')
+			+pilarCard('celebrar')
+			+pilarCard('compartilhar')
+		footer
+			.divider
+				div
+				div
+			.infos
+				div
+				div
+					p GPTW - 2017
+					a(href="http://movile.com") www.movile.com
 
 
 
