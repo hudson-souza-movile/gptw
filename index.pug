@@ -18,30 +18,24 @@ html(lang='en')
 					li
 				span MENU
 			div.menu
-				p Inicio
+				p 
+					a(href='index.html') Inicio
 				span PILARES:
+				include pug-templates/liItems
 				ul
-					li
-						a(href='contratar.html') Contratar
-					li
-						a(href='receber.html') Receber
-					li
-						a(href='inspirar.html') Inspirar
-					li
-						a(href='falar.html') Falar
-					li
-						a(href='escutar.html') Escutar
-					li
-						a(href='agradecer.html') Agradecer
-					li
-						a(href='desenvolver.html') Desenvolver
-					li
-						a(href='cuidar.html') Cuidar
-					li
-						a(href='celebrar.html') Celebrar
-					li
-						a(href='compartilhar.html') Compartilhar
-			div.gptw
+					+liItems('contratar')
+					+liItems('receber')
+					+liItems('inspirar')
+					+liItems('falar')
+					+liItems('escutar')
+					+liItems('agradecer')
+					+liItems('desenvovler')
+					+liItems('cuidar')
+					+liItems('celebrar')
+					+liItems('compartilhar')
+				div.gptw
+					p GPTW - 2017
+					a(href="http://movile.com", target='blank') www.movile.com
 		header
 			img(src="img/movile-logo.png")
 		.container
@@ -125,7 +119,7 @@ html(lang='en')
 					img(src="img/movile-logo.png")
 				div
 					p GPTW - 2017
-					a(href="http://movile.com") www.movile.com
+					a(href="http://movile.com", target='blank') www.movile.com
 	script(src='js/umbrella.min.js')
 	script(src='js/addHeaderShadow.js')
 	script(src='js/activeMenu.js')

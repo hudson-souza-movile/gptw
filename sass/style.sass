@@ -28,7 +28,7 @@ $white: #fff
 	padding: 0
 	margin: 0
 	box-sizing: border-box
-	transition: all ease 0.2s
+	transition: all ease 0.4s
 	color: inherit
 	text-decoration: none
 
@@ -76,6 +76,8 @@ nav
 	top: 0
 	left: 0
 	z-index: 5
+	background: none
+	height: 100vh
 	.trigger
 		position: absolute
 		top: 20px
@@ -98,16 +100,14 @@ nav
 			font-size: 12px
 			margin-left: 10px
 	.menu
-		height: 100vh
+		height: calc(100% - 40px)
 		width: 90vw
 		max-width: 300px
-		margin-top: 80px
-		padding: 20px
-		background: $white
+		margin-top: 40px
+		padding: 20px 0px 20px 52px
 		transform: translateX(-100%)
-		box-shadow: 0px 4px 6px rgba(0,0,0,0.1)
 		overflow-y: auto
-		p
+		> p
 			display: inline-block
 			letter-spacing: 1px
 			font-size: 16px
@@ -127,13 +127,31 @@ nav
 			li
 				font-size: 14px
 				margin-bottom: 20px
+				transform: translateX(-60px)
+				a
+					text-transform: capitalize
 				a:hover
 					color: $main-accent
-
+		.gptw
+			text-align: left
+			background: url(../img/movile-icon.png) no-repeat
+			background-position: 20px center
+			background-size: 36px
+			padding: 20px 0px 20px 64px
+			border-top: 1px solid $light-gray
+			margin-left: -20px
+			margin-right: -20px
+			p
+				font-size: 12px
+				font-weight: 800
+				color: $black
+				margin-bottom: -6px
+			a
+				font-size: 12px
+				color: $main-accent
 nav.menu-active
 	background: $white
 	width: auto
-	height: auto
 	.trigger
 		ul
 			li:first-child
@@ -144,6 +162,23 @@ nav.menu-active
 				transform: translateY(-6px) rotate(-45deg)
 	.menu
 		transform: translateX(0%)
+		@keyframes menuItems
+			0%
+				transform: translateX(-60px)
+			// 70%
+			// 	transform: translateX(20px)
+			100%
+				transform: translateX(0px)
+		li
+			animation-name: menuItems
+			animation-fill-mode: forwards
+			animation-timing-function: ease
+			animation-delay: 0.2s
+			@for $i from 1 through 10
+				&:nth-child(#{$i})
+					animation-duration: $i * 150ms
+
+
 header
 	width: 100%
 	padding: 16px
