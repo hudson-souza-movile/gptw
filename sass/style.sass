@@ -172,15 +172,10 @@ nav.menu-active
 			100%
 				transform: translateX(0px)
 		li
-			animation-name: menuItems
-			animation-fill-mode: forwards
-			animation-timing-function: ease
-			animation-delay: 0.2s
+			animation: menuItems 0s ease 0.2s 1 forwards
 			@for $i from 1 through 10
 				&:nth-child(#{$i})
 					animation-duration: $i * 150ms
-
-
 header
 	width: 100%
 	padding: 16px
