@@ -100,9 +100,10 @@ nav
 			font-size: 12px
 			margin-left: 10px
 	.menu
+		transition: all ease 1s
 		height: calc(100% - 40px)
 		width: 90vw
-		max-width: 300px
+		max-width: 250px
 		margin-top: 40px
 		padding: 20px 0px 20px 52px
 		transform: translateX(-100%)
@@ -161,6 +162,7 @@ nav.menu-active
 			li:last-child
 				transform: translateY(-6px) rotate(-45deg)
 	.menu
+		transition: all ease 0.4s
 		transform: translateX(0%)
 		@keyframes menuItems
 			0%
