@@ -1,25 +1,18 @@
-//variables
-$main-accent : #E84A5F
-$second-accent : #FBE290
-$third-accent : #95E1D3
-$black : #2A363B
-$medium-gray: #9C9C9C
-$light-gray : #F1F1F1
-$white: #fff
+@import "variables"
 
 //micro-elements
 .underline-center
 	margin: 0 auto
 .underline-accent
-	width: 32px
+	width: 32px !important
 	height: 2px
 	background: $main-accent !important
 .underline-second-accent
-	width: 32px
+	width: 32px !important
 	height: 2px
 	background: $second-accent !important
 .underline-third-accent
-	width: 32px
+	width: 32px !important
 	height: 2px
 	background: $third-accent !important
 
@@ -57,6 +50,9 @@ body
 	background: white
 	font-family: "adelle-sans", "karla", slab-serif, sans-serif
 	color: $black
+	overflow-x: hidden
+.wrapper
+	overflow-x: hidden
 .overflow-hidden
 	overflow: hidden
 .overlay
@@ -68,9 +64,11 @@ body
 	background: none
 	z-index: 4
 	pointer-events: none
+	transition: all ease 0.8s
 .overlay-active
 	background: rgba(0,0,0,0.5)
 	pointer-events: auto
+	transition: all ease 0.4s
 nav
 	position: fixed
 	top: 0
@@ -78,6 +76,8 @@ nav
 	z-index: 5
 	background: none
 	height: 100vh
+	width: 0px
+	transition: all ease 0.8s
 	.trigger
 		position: absolute
 		top: 20px
@@ -100,7 +100,7 @@ nav
 			font-size: 12px
 			margin-left: 10px
 	.menu
-		transition: all ease 1s
+		transition: all ease 0.8s
 		height: calc(100% - 40px)
 		width: 90vw
 		max-width: 250px
@@ -151,6 +151,7 @@ nav
 				font-size: 12px
 				color: $main-accent
 nav.menu-active
+	transition: all ease 0.4s
 	background: $white
 	width: auto
 	.trigger
@@ -176,175 +177,6 @@ nav.menu-active
 			@for $i from 1 through 10
 				&:nth-child(#{$i})
 					animation-duration: $i * 150ms
-header
-	width: 100%
-	padding: 16px
-	text-align: center
-	position: fixed
-	top: 0
-	left: 0
-	z-index: 3
-	background: $white
-	& img
-		width: 90px
-.shadow-header
-	box-shadow: 0px 4px 6px rgba(0,0,0,0.1)
-.container
-	width: 100%
-	max-width: 1200px
-	padding: 30px
-	margin: 60px auto 0px
-.intro
-	width: 100%
-	max-width: 910px
-	padding: 0px 50px
-	margin: 40px auto
-	display: flex
-	flex-direction: column
-	background: url(../img/decoration-1.png) no-repeat
-	background-position: 0px 50px
-	background-size: 100% auto
-	& > div
-		display: flex
-		align-items: center
-		justify-content: space-between
-		width: 100%
-		.chamada
-			width: 50%
-			h1
-				width: 100%
-				line-height: 1
-			p
-				line-height: 1.4
-				margin-top: 12px
-		.holding-logos
-			width: 284px
-			height: 374px
-			background: url(../img/holding-logos.png) no-repeat center center
-			background-size: contain
-		.map
-			width: 405px
-			height: 246px
-			margin-left: -40px
-			margin-top: 80px
-			background: url(../img/map.png) no-repeat center center
-			background-size: contain
-		.numbers
-			width: 48%
-			margin-right: -40px
-			h2
-				margin-bottom: -15px
-			label
-				display: inline-block
-				margin-top: 15px
-			span
-				color: $main-accent
-.future
-	background-image: linear-gradient(-90deg, #FF585A 0%, #F857A5 100%)
-	text-align: center
-	.title
-		margin: 0px auto
-		padding: 72px 0px 61px
-		width: 100%
-		max-width: 350px
-		background: url(../img/o-watermark.png) no-repeat
-		background-size: auto 140px
-		background-position: center 56px
-		color: #fff
-		color: $white
-		span
-			color: $second-accent
-		label
-			display: inline-block
-			margin-top: 10px
-	.videos
-		display: flex
-		flex-direction: column
-		margin: 0 auto
-		max-width: 920px
-		box-shadow: 0px 4px 14px rgba(0,0,0,0.1)
-		div
-			display: flex
-			justify-content: space-between
-			background: $white
-			align-items: center
-			a, img
-				display: block
-				width: 100%
-			.card
-				display: flex
-				flex-direction: column
-				justify-content: flex-start
-				text-align: left
-				align-items: flex-start
-				padding-left: 40px
-				width: calc(100% - 40px)
-				.card-title
-					color: $main-accent
-					text-transform: uppercase
-					letter-spacing: 2px
-					margin-bottom: 10px
-				.card-content
-					margin-top: 15px
-					font-size: 18px
-					span
-						font-size: 34px
-						font-weight: 800
-						display: block
-.jms
-	background: #F8F8F8
-	padding-bottom: 60px
-	.last-year
-		margin-top: 60px
-		.underline
-			margin-top: 30px
-	.featured-video
-		margin-top: 60px
-		background: url(../img/decoration-2.png) no-repeat center center
-		background-size: contain
-		width: 100%
-		max-width: 950px
-		margin: 60px auto 0px
-		a
-			position: relative
-			display: inline-block
-			z-index: 2
-		a:before
-			content: ""
-			display: block
-			position: absolute
-			top: 20px
-			left: -20px
-			background: $third-accent
-			width: calc(100% + 40px)
-			height: 100%
-			z-index: -1
-.pilares
-	margin-top: 30px
-	text-align: center
-	.underline-center
-		margin-top: 40px
-
-		color: inherit
-	.pilar-card
-		display: inline-block
-		background: $second-accent
-		width: 106px
-		box-shadow: 0 3px 9px 0 rgba(0,0,0,0.1)
-		text-align: center
-		margin: 30px 5px
-		&:hover
-			transform: translateY(-10px) scale(1.1)
-		img
-			height: 82px
-			width: auto
-			padding: 16px 0px
-		p
-			background: $white
-			font-size: 12px
-			padding: 16px 0px 16px 16px
-			text-align: left
-			text-transform: capitalize
 footer
 	margin-top: 70px
 	display: flex
@@ -382,4 +214,3 @@ footer
 			text-align: left
 			img
 				width: 100px
-
