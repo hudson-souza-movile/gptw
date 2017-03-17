@@ -9,9 +9,40 @@ html(lang='en')
 		link(rel="stylesheet", href="css/style.css")
 		title Movile | Great Place to Work
 	body
-		include pug-templates/pilar_card
+		.overlay
+		nav
+			div.trigger
+				ul
+					li
+					li
+					li
+				span MENU
+			div.menu
+				p Inicio
+				span PILARES:
+				ul
+					li
+						a(href='contratar.html') Contratar
+					li
+						a(href='receber.html') Receber
+					li
+						a(href='inspirar.html') Inspirar
+					li
+						a(href='falar.html') Falar
+					li
+						a(href='escutar.html') Escutar
+					li
+						a(href='agradecer.html') Agradecer
+					li
+						a(href='desenvolver.html') Desenvolver
+					li
+						a(href='cuidar.html') Cuidar
+					li
+						a(href='celebrar.html') Celebrar
+					li
+						a(href='compartilhar.html') Compartilhar
+			div.gptw
 		header
-			a.menu(href="javascript:") MENU
 			img(src="img/movile-logo.png")
 		.container
 			section.intro
@@ -40,7 +71,7 @@ html(lang='en')
 			.videos
 				div
 					a.active-video(href="javascript:")
-						img(src="img/video.png")
+						img(src="img/video.png", data-video-name='video1')
 					div.card
 						h4.card-title o que queremos
 						.underline-accent
@@ -60,20 +91,21 @@ html(lang='en')
 							| da nossa cultura, do nosso
 							span Jeito Moviliano de Ser 
 					a.active-video(href="javascript:")
-						img(src="img/video.png")
+						img(src="img/video.png", data-video-name='video2')
 			.last-year
 				label Em 2016, mais uma vez, trabalhamos com um único foco:
 				h3 
 					span tornar a vida d@s noss@s Movilian@s melhor!
 				.underline.underline-center.underline-third-accent
 			.featured-video
-				a.active-video(href="javascript:")
+				a.active-video(href="javascript:", data-video-name='video3')
 					img(src="img/video.png")
 		section.pilares
 			label Muito mais do que processos tradicionais, a Movile se preocupa com a experiência do Movilian@s!
 				h3 
 					span Conheça nossos pilares:
 			.underline.underline-center.underline-second-accent
+			include pug-templates/pilar_card
 			+pilarCard('contratar')
 			+pilarCard('receber')
 			+pilarCard('inspirar')
@@ -90,11 +122,13 @@ html(lang='en')
 				div
 			.infos
 				div
+					img(src="img/movile-logo.png")
 				div
 					p GPTW - 2017
 					a(href="http://movile.com") www.movile.com
 	script(src='js/umbrella.min.js')
 	script(src='js/addHeaderShadow.js')
+	script(src='js/activeMenu.js')
 
 
 
