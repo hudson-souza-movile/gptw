@@ -1,12 +1,7 @@
 doctype html
 html(lang='en')
 	head
-		meta(charset='UTF-8')
-		meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
-		script(src='https://use.typekit.net/vgm6kkx.js')
-		script.
-			try{Typekit.load({ async: true });}catch(e){}
-		link(rel="stylesheet", href="css/basic.css")
+		include pug-templates/basicHead
 		link(rel="stylesheet", href="css/home.css")
 		title Movile | Great Place to Work
 	body
@@ -38,7 +33,7 @@ html(lang='en')
 					div.gptw
 						p GPTW - 2017
 						a(href="http://movile.com", target='blank') www.movile.com
-			header
+			header.home
 				img(src="img/movile-logo.png")
 			.container
 				section.intro
@@ -123,7 +118,7 @@ html(lang='en')
 						p GPTW - 2017
 						a(href="http://movile.com", target='blank') www.movile.com
 		script(src='js/umbrella.min.js')
-		script(src='js/addHeaderShadow.js')
+		script(src='js/changeHeader.js')
 		script(src='js/activeMenu.js')
 
 

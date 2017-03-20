@@ -51,6 +51,7 @@ body
 	font-family: "adelle-sans", "karla", slab-serif, sans-serif
 	color: $black
 	overflow-x: hidden
+	position: relative
 .wrapper
 	overflow-x: hidden
 .overflow-hidden
@@ -154,12 +155,16 @@ nav.menu-active
 	width: 250px
 	.trigger
 		ul
+			li
+				background: $black
 			li:first-child
 				transform: translateY(6px) rotate(45deg)
 			li:nth-child(2)
 				transform: scale(0)
 			li:last-child
 				transform: translateY(-6px) rotate(-45deg)
+		span
+			color: $black
 	.menu
 		transition: all ease 0.4s
 		transform: translateX(0%)
