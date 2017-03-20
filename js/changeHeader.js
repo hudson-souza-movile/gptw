@@ -1,5 +1,5 @@
 u(document).on('scroll', function(){                        
-	if (window.scrollY > 10) {
+	if (window.scrollY > 60) {
 		u('header.home').addClass('shadow-header');
 		u('header.pilar').addClass('scrolled');
 		u('div.trigger').removeClass('trigger-pilar');

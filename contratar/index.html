@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="../css/basic.css">
     <link rel="stylesheet" href="../css/pilars.css">
+    <link rel="stylesheet" href="../css/wallop.css">
+    <link rel="stylesheet" href="../css/wallop--slide.css">
+    <script type="text/javascript" src="../js/allop.min.js"></script>
+    <script>
+      var wallopEl = document.querySelector('.Wallop');
+      var slider = new Wallop(wallopEl);
+    </script>
     <title>Movile | Great Place to Work</title>
   </head>
   <body>
@@ -22,7 +29,7 @@
           </ul><span>MENU</span>
         </div>
         <div class="menu">
-          <p> <a href="index.html">Inicio</a></p><span>PILARES:</span>
+          <p> <a href="../index.html">Inicio</a></p><span>PILARES:</span>
           <ul>
                       <li><a class="pilar-selected" href="contratar/">contratar</a></li>
                       <li><a class="pilar" href="receber/">receber</a></li>
@@ -47,6 +54,49 @@
         <p>Tudo que fazemos é para algo maior: as pessoas.</p>
         <div class="arrow-down"></div>
       </section>
+            <div class="container cover">
+              <h3>Desenvolvemos nosso Employee Value Proposition (EVP)!</h3>
+              <p>Contamos com +40 Movilian@s durante o desenvolvimento do projeto!</p>
+              <div class="underline underline-accent"></div>
+              <div class="cover-img" style="background-image: url(../img/cover-contratar.png)"></div>
+            </div>
+      <section class="container content-50-50">
+        <div class="txt-list">
+          <h2>Movile Journey</h2>
+          <ul>
+            <li>
+              <p>Palestras, cursos, visitas aos nossos escritórios, participação em feiras e eventos para alunos do  ensino técnico de Tecnologia.</p>
+              <p>Nossa proposta é compartilhar conhecimento para que fiquem preparados para futuros desafios profissionais.</p>
+              <p>Setembro: evento no colégio técnico, com 8 Movilian@s, para desafio de case técnico - 40 participantes!</p>
+              <p>- Vencedores premiados no escritório da Movile, com roda de bate-papo com ex-estagiários</p>
+              <p>- Dos 10 melhores colocados, contratamos 4!</p>
+            </li>
+          </ul>
+        </div>
+        <div class="slider">
+          <div class="Wallop Wallop--slide">
+            <div class="Wallop-list">
+              <div class="Wallop-item--current"><img src="../img/movile-logo.png"></div>
+              <div class="Wallop-item"><img src="../img/cover-contratar.png"></div>
+            </div>
+            <button class="Wallop-buttonPrevious">Previous</button>
+            <button class="Wallop-buttonNext">Next</button>
+          </div>
+        </div>
+      </section>
+      <script>var </script>
+      <footer>
+        <div class="divider">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="infos">
+          <div><img src="../img/movile-logo.png"></div>
+          <div>
+            <p>Próximo</p><a href="http://movile.com" target="blank">pilar</a>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="../js/umbrella.min.js"></script>
     <script src="../js/changeHeader.js"></script>

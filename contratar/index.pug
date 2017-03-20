@@ -4,6 +4,12 @@ html(lang='en')
 		include ../pug-templates/basicHead
 		link(rel="stylesheet", href="../css/basic.css")
 		link(rel="stylesheet", href="../css/pilars.css")
+		link(rel="stylesheet", href="../css/wallop.css")
+		link(rel="stylesheet", href="../css/wallop--slide.css")
+		script(type='text/javascript', src='../js/allop.min.js')
+		script.
+			var wallopEl = document.querySelector('.Wallop');
+			var slider = new Wallop(wallopEl);
 		title Movile | Great Place to Work
 	body
 		.wrapper
@@ -17,7 +23,7 @@ html(lang='en')
 					span MENU
 				div.menu
 					p 
-						a(href='index.html') Inicio
+						a(href='../index.html') Inicio
 					span PILARES:
 					include ../pug-templates/pilar_liItems
 					ul
@@ -43,17 +49,39 @@ html(lang='en')
 				h1 Contratar
 				p Tudo que fazemos é para algo maior: as pessoas.
 				.arrow-down
-
-			//- footer
-			//- 	.divider
-			//- 		div
-			//- 		div
-			//- 	.infos
-			//- 		div
-			//- 			img(src="../img/movile-logo.png")
-			//- 		div
-			//- 			p Próximo
-			//- 			a(href="http://movile.com", target='blank') pilar
+			include ../pug-templates/pilar_cover
+			+coverPilar('Desenvolvemos nosso Employee Value Proposition (EVP)!', 'Contamos com +40 Movilian@s durante o desenvolvimento do projeto!', 'contratar')
+			section.container.content-50-50
+				.txt-list
+					h2 Movile Journey
+					ul
+						li
+							p Palestras, cursos, visitas aos nossos escritórios, participação em feiras e eventos para alunos do  ensino técnico de Tecnologia.
+							p Nossa proposta é compartilhar conhecimento para que fiquem preparados para futuros desafios profissionais.
+							p Setembro: evento no colégio técnico, com 8 Movilian@s, para desafio de case técnico - 40 participantes!
+							p - Vencedores premiados no escritório da Movile, com roda de bate-papo com ex-estagiários
+							p - Dos 10 melhores colocados, contratamos 4!
+				.slider
+					.Wallop.Wallop--slide
+						.Wallop-list
+							.Wallop-item--current
+								img(src="../img/movile-logo.png")
+							.Wallop-item
+								img(src="../img/cover-contratar.png")
+						button.Wallop-buttonPrevious Previous
+						button.Wallop-buttonNext Next
+			script.
+				var 
+			footer
+				.divider
+					div
+					div
+				.infos
+					div
+						img(src="../img/movile-logo.png")
+					div
+						p Próximo
+						a(href="http://movile.com", target='blank') pilar
 		script(src='../js/umbrella.min.js')
 		script(src='../js/changeHeader.js')
 		script(src='../js/activeMenu.js')
