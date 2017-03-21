@@ -2,11 +2,8 @@ doctype html
 html(lang='en')
 	head
 		include ../pug-templates/basicHead
-		link(rel="stylesheet", href="../css/basic.css")
-		link(rel="stylesheet", href="../css/pilars.css")
-		link(rel="stylesheet", href="../css/wallop.css")
-		link(rel="stylesheet", href="../css/wallop--slide.css")
-		title Contratar | Movile | Great Place to Work
+		include ../pug-templates/pilarHead
+		+pilarTitle('Contratar')
 	body
 		.wrapper
 			.overlay
@@ -47,24 +44,96 @@ html(lang='en')
 				.arrow-down
 			include ../pug-templates/pilar_cover
 			+coverPilar('Desenvolvemos nosso Employee Value Proposition (EVP)!', 'Contamos com +40 Movilian@s durante o desenvolvimento do projeto!', 'contratar')
-			section.container.content-50-50
-				.txt-list
-					h2 Movile Journey
-					ul
-						li
-							p Palestras, cursos, visitas aos nossos escritórios, participação em feiras e eventos para alunos do  ensino técnico de Tecnologia.
-							p Nossa proposta é compartilhar conhecimento para que fiquem preparados para futuros desafios profissionais.
-							p Setembro: evento no colégio técnico, com 8 Movilian@s, para desafio de case técnico com 40 participantes!
-							p - Vencedores premiados no escritório da Movile, com roda de bate-papo com ex-estagiários
-							p - Dos 10 melhores colocados, contratamos 4!
-				.slider
-					.Wallop.Wallop--slide
-						.Wallop-list
-							.Wallop-item(style='background-image:url(img/journey/journey1.jpg)')
-							.Wallop-item(style='background-image:url(img/journey/journey2.jpg)')
-							.Wallop-item(style='background-image:url(img/journey/journey3.jpg)')
-						button.Wallop-buttonPrevious
-						button.Wallop-buttonNext
+			section
+				.container.content-50-50
+					.txt-list
+						h2 Movile Journey
+						ul
+							li
+								p Palestras, cursos, visitas aos nossos escritórios, participação em feiras e eventos para alunos do  ensino técnico de Tecnologia.
+								p Nossa proposta é compartilhar conhecimento para que fiquem preparados para futuros desafios profissionais.
+								p Setembro: evento no colégio técnico, com 8 Movilian@s, para desafio de case técnico com 40 participantes!
+								p - Vencedores premiados no escritório da Movile, com roda de bate-papo com ex-estagiários
+								p - Dos 10 melhores colocados, contratamos 4!
+					.slider
+						.Wallop.Wallop--1
+							.Wallop-list
+								.Wallop-item(style='background-image:url(img/journey1.jpg)')
+								.Wallop-item(style='background-image:url(img/journey2.jpg)')
+								.Wallop-item(style='background-image:url(img/journey3.jpg)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section.partial-bg-flat
+				.container.content-50-50
+					.img-contain
+						img(src='img/app-print.png')
+					.txt-list
+						h2 Gente Pra Gente
+						ul
+							li
+								p Indicações para nossas vagas vale badge no nosso app!
+							li
+								p Ninguém melhor do que nós mesmos para reconhecer potenciais nov@s Movilian@s!
+			section.centered
+				.container
+					h2 Opportunities
+					p Expandimos as oportunidades para todos os colaboradores do grupo Movile!
+					p
+						span Descomplicado e informal
+					.underline.underline-accent
+			section
+				.container.images
+					img(src='img/opportunities.png')
+			section.partial-bg-flat
+				.container.content-50-50
+					.slider
+						.Wallop.Wallop--2
+							.Wallop-list
+								.Wallop-item(style='background-image:url(img/cocoaheads1.jpg)')
+								.Wallop-item(style='background-image:url(img/cocoaheads2.jpg)')
+								.Wallop-item(style='background-image:url(img/cocoaheads3.jpg)')
+								.Wallop-item(style='background-image:url(img/cocoaheads4.jpg)')
+								.Wallop-item(style='background-image:url(img/cocoaheads5.jpg)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					.txt-list
+						h2 Cocoaheads
+						ul
+							li
+								p Novas edições do evento que agita a comunidade iOS!
+			section
+				.container.content-50-50
+					.txt-list
+						h2 Movile Universitária
+						ul
+							li
+								p Participamos de 9 eventos de grande porte,  em todo o estado de São Paulo!
+							li
+								p E + de 30 Movilian@s participaram levando mais sobre a Movile a universitários e universitárias!
+					.slider
+						.Wallop.Wallop--3
+							.Wallop-list
+								.Wallop-item(style='background-image:url(img/mu1.jpg)')
+								.Wallop-item(style='background-image:url(img/mu2.jpg)')
+								.Wallop-item(style='background-image:url(img/mu3.jpg)')
+								.Wallop-item(style='background-image:url(img/mu4.jpg)')
+								.Wallop-item(style='background-image:url(img/mu5.jpg)')
+								.Wallop-item(style='background-image:url(img/mu6.jpg)')
+								.Wallop-item(style='background-image:url(img/mu7.jpg)')
+								.Wallop-item(style='background-image:url(img/mu8.jpg)')
+								.Wallop-item(style='background-image:url(img/mu9.jpg)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section.centered
+				.container
+					h2 Sponsors
+					p Nossos 17 estagiários do Mobile Dream se tornaram Sponsors oficiais da Movile em suas universidades, em Campinas e São Paulo
+					.underline.underline-accent
+			section
+				.container.images
+					img(src='img/sponsors1.png')
+					img(src='img/sponsors2.png')
+					img(src='img/sponsors1.png')
 			footer
 				.divider
 					div
@@ -80,8 +149,14 @@ html(lang='en')
 		script(src='../js/activeMenu.js')
 		script(src='../js/Wallop.js')
 		script.
-			var slider = document.querySelector('.Wallop');
-			var Wallop = new Wallop(slider);
+			var slider1 = document.querySelector('.Wallop--1');
+			new Wallop(slider1);
 
+			var slider2 = document.querySelector('.Wallop--2');
+			new Wallop(slider2);
+
+			var slider3 = document.querySelector('.Wallop--3');
+			new Wallop(slider3);
+  
 
 
