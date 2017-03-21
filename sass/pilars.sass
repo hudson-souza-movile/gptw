@@ -91,7 +91,37 @@ header.scrolled
 .content-50-50
 	display: flex
 	justify-content: space-between
+	align-items: stretch
+	margin-top: 50px
+	margin-bottom: 50px
 	& > div
 		width: 48%
+	.slider
+		div
+			height: 100%
+			// position: relative
+	.txt-list
+		ul
+			list-style: none
+			li
+				padding-left: 50px
+				position: relative
+
+				&:before
+					position: absolute
+					top: 8px
+					left: 2px
+					content: ''
+					width: 32px
+					height: 2px
+					background: $main-accent
+				p
+					margin-bottom: 8px
+					color: $medium-gray
+.Wallop-item
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: center
+
 
 

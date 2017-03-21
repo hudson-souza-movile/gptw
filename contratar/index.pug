@@ -6,11 +6,7 @@ html(lang='en')
 		link(rel="stylesheet", href="../css/pilars.css")
 		link(rel="stylesheet", href="../css/wallop.css")
 		link(rel="stylesheet", href="../css/wallop--slide.css")
-		script(type='text/javascript', src='../js/allop.min.js')
-		script.
-			var wallopEl = document.querySelector('.Wallop');
-			var slider = new Wallop(wallopEl);
-		title Movile | Great Place to Work
+		title Contratar | Movile | Great Place to Work
 	body
 		.wrapper
 			.overlay
@@ -58,20 +54,16 @@ html(lang='en')
 						li
 							p Palestras, cursos, visitas aos nossos escritórios, participação em feiras e eventos para alunos do  ensino técnico de Tecnologia.
 							p Nossa proposta é compartilhar conhecimento para que fiquem preparados para futuros desafios profissionais.
-							p Setembro: evento no colégio técnico, com 8 Movilian@s, para desafio de case técnico - 40 participantes!
+							p Setembro: evento no colégio técnico, com 8 Movilian@s, para desafio de case técnico com 40 participantes!
 							p - Vencedores premiados no escritório da Movile, com roda de bate-papo com ex-estagiários
 							p - Dos 10 melhores colocados, contratamos 4!
 				.slider
 					.Wallop.Wallop--slide
 						.Wallop-list
-							.Wallop-item--current
-								img(src="../img/movile-logo.png")
-							.Wallop-item
-								img(src="../img/cover-contratar.png")
+							.Wallop-item(style='background-image:url(../img/movile-logo.png)')
+							.Wallop-item(style='background-image:url(../img/cover-contratar.png)')
 						button.Wallop-buttonPrevious Previous
 						button.Wallop-buttonNext Next
-			script.
-				var 
 			footer
 				.divider
 					div
@@ -85,6 +77,10 @@ html(lang='en')
 		script(src='../js/umbrella.min.js')
 		script(src='../js/changeHeader.js')
 		script(src='../js/activeMenu.js')
+		script(src='../js/Wallop.js')
+		script.
+			var slider = document.querySelector('.Wallop');
+			var Wallop = new Wallop(slider);
 
 
 
