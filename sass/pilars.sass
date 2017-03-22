@@ -38,10 +38,10 @@ header.scrolled
 	width: 110vw
 	position: absolute
 	z-index: -1
-	top: 0
-	left: -10%
+	top: -7vw
+	left: -7%
 	background-image: linear-gradient(-90deg, #FF5934 0%, #9759B5 100%)
-	transform-origin: 0px 0px
+	transform-origin: center
 	transform: rotate(-8deg)
 	transition: none
 section
@@ -73,7 +73,7 @@ section
 		transform: rotate(45deg)
 		margin: 50px auto
 .container
-	width: 90%
+	width: 96%
 	max-width: 920px
 	padding: 10px
 	margin: 0 auto
@@ -95,6 +95,7 @@ section
 		text-align: center
 		max-width: 400px
 		margin: 15px auto 0px
+		font-size: 16px
 	.underline
 		margin: 40px auto
 .table
@@ -242,7 +243,7 @@ section
 	.underline
 		margin: 30px auto
 .images
-	margin: -70px auto 70px
+	margin: -70px auto 0px
 	display: flex
 	justify-content: center
 	align-items: center
@@ -250,6 +251,7 @@ section
 		margin: 0px 20px
 		width: 100%
 		img
+			display: block
 			width: 100%
 			box-shadow: 0px 4px 6px rgba(0,0,0,0.1)
 		.no-shadow
@@ -327,3 +329,40 @@ footer
 			border-top: transparent
 		&:hover:after
 			animation: pulsePrev 1s infinite alternate
+@media (max-width: 970px)
+	.hero-bg
+		width: 120vw
+		top: -1%
+		left: -12%
+@media (max-width: 919px)
+	.table
+		.valor
+			width: 32%
+@media (max-width: 770px)
+	p
+		font-size: 13px
+	h2
+		font-size: 30px
+	.narrow
+		max-width: 500px
+	.slider
+		height: 240px
+	.slider-medium
+		height: 320px
+	.images
+		div
+			margin: 0px 5px
+	.img-gallery
+		width: 140% !important
+@media (max-width: 600px)
+	.title
+		min-height: 0px
+		background-size: contain
+		margin-top: 60px
+		.arrow-down
+			margin: 20px auto
+	.cover
+		padding: 20px 
+	.table
+		.valor
+			width: 49%
