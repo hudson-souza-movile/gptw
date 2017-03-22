@@ -70,6 +70,10 @@ section
 	max-width: 920px
 	padding: 10px
 	margin: 0 auto
+.narrow
+	width: 100%
+	max-width: 600px
+	margin: 0 auto
 .cover
 	background: $white
 	color: $black
@@ -131,6 +135,13 @@ section
 				right: 12px
 				border-left: transparent
 				border-bottom: transparent
+.Wallop-item
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+.txt-simple
+	.underline
+		margin-top: 30px
 .txt-list
 	ul
 		list-style: none
@@ -149,6 +160,8 @@ section
 			p
 				margin-bottom: 8px
 				color: $medium-gray
+.full-bg-flat
+	background: $light-gray
 .partial-bg-flat
 	position: relative
 	&:before
@@ -163,6 +176,7 @@ section
 		background: $light-gray
 .partial-bg-gradient
 	position: relative
+	color: $white !important
 	&:before
 		position: absolute
 		top: 15%
@@ -178,6 +192,18 @@ section
 	img
 		width: 100%
 		max-width: 330px
+.img-gallery
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	width: 80% !important
+	padding-right: 40px
+	div
+		width: 32%
+		height: 160px
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
 .centered
 	text-align: center
 	p
@@ -190,15 +216,56 @@ section
 	margin: -70px auto 70px
 	display: flex
 	justify-content: center
-	img
-		align-self: flex-start
+	align-items: center
+	div
 		margin: 0px 20px
 		width: 100%
-		box-shadow: 0px 4px 6px rgba(0,0,0,0.1)
-.Wallop-item
-	background-size: cover
-	background-repeat: no-repeat
-	background-position: center
+		img
+			width: 100%
+			box-shadow: 0px 4px 6px rgba(0,0,0,0.1)
+		.no-shadow
+			box-shadow: 0px 0px 0px rgba(0,0,0,0)
+.comment
+	.underline
+		transform: rotate(90deg)
+	h3
+		color: $main-accent
+.navigation
+	padding: 50px 16px
+	width: 100%
+	max-width: 1200px
+	display: flex
+	justify-content: space-between
 
-
-
+	label
+		font-size: 12px
+		cursor: pointer
+	div
+		p
+			font-size: 16px
+			font-weight: bold
+			text-transform: capitalize
+	.prev, .next
+		position: relative
+		&:after
+			position: absolute
+			content: ''
+			width: 16px
+			height: 16px
+			border: 1px solid $black
+			transform: rotate(45deg)
+			top: 16px
+	.next
+		text-align: right
+		padding-right: 40px
+		&:after
+			right: 12px
+			border-left: transparent
+			border-bottom: transparent
+	.prev
+		text-align: left
+		padding-left: 40px
+		&:after
+			left: 12px
+			border-right: transparent
+			border-top: transparent

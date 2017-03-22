@@ -1,0 +1,14 @@
+mixin footerLinks(prev, next)
+	footer
+		.divider
+			div
+			div
+		.navigation
+			a(href='../'+prev)
+				.prev
+					label Anterior
+					p= prev
+			a(href='../'+next)
+				.next
+					label Próximo
+					p= next
