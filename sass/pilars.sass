@@ -243,7 +243,7 @@ section
 	.underline
 		margin: 30px auto
 .images
-	margin: -70px auto 0px
+	margin: -70px auto 70px
 	display: flex
 	justify-content: center
 	align-items: center
@@ -254,8 +254,6 @@ section
 			display: block
 			width: 100%
 			box-shadow: 0px 4px 6px rgba(0,0,0,0.1)
-		.no-shadow
-			box-shadow: 0px 0px 0px rgba(0,0,0,0.0)
 	.multi-photos
 		display: flex
 		flex-direction: column
@@ -361,8 +359,13 @@ footer
 		margin-top: 60px
 		.arrow-down
 			margin: 20px auto
-	.cover
-		padding: 20px 
+		.container
+			max-width: 920px
 	.table
 		.valor
 			width: 49%
+	.container
+		max-width: 500px
+	.cover
+		max-width: 580px
+		padding: 20px
