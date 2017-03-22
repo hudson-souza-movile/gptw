@@ -255,21 +255,20 @@
                   </div></a></div>
             </footer>
     </div>
-    <script src="../js/umbrella.min.js">
-      <script src="../js/changeHeader.js"></script>
-      <script src="../js/activeMenu.js"></script>
-      <script src="../js/Wallop.js"></script>
-      <script>
-        var q = u('.Wallop').length;
-        console.log(q)
-        i = 1
-        while (i <= q) {
-        	slider = "slider"+i
-        	var slider = document.querySelector('.Wallop--'+i);
-        	new Wallop(slider);
-        	i++
-        }
-      </script>
+    <script src="../js/umbrella.min.js"></script>
+    <script src="../js/changeHeader.js"></script>
+    <script src="../js/activeMenu.js"></script>
+    <script src="../js/Wallop.js"></script>
+    <script>
+      var q = u('.Wallop').length;
+      console.log(q)
+      i = 1
+      while (i <= q) {
+      	slider = "slider"+i
+      	var slider = document.querySelector('.Wallop--'+i);
+      	new Wallop(slider);
+      	i++
+      }
     </script>
   </body>
 </html>
