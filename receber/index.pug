@@ -19,8 +19,8 @@ html(lang='en')
 					span PILARES:
 					include ../pug-templates/pilar_li_item
 					ul
-						+liItem('contratar','link-selected')
-						+liItem('receber','link')
+						+liItem('contratar','link')
+						+liItem('receber','link-selected')
 						+liItem('inspirar','link')
 						+liItem('falar','link')
 						+liItem('escutar','link')
@@ -34,135 +34,93 @@ html(lang='en')
 			.hero-bg
 			section.title
 				img(src="../img/pilares/contratar.png")
-				h1 Contratar
+				h1 Receber
 				.arrow-down
 			.container.cover
-				h3 Desenvolvemos nosso Employee Value Proposition (EVP)!
-				p Contamos com +40 Movilian@s durante o desenvolvimento do projeto!
+				h3 Welcome - Programa de Onboarding
+				p Desde o ok na proposta, noss@s candidat@s já são parte do time e tratados com todo carinho!
 				.underline.underline-accent
-				p Value proposition
-				.table
-					.valor
-						h5 People
-						p Work with awesome people & enjoy a really friendly atmosphere.
-					.valor
-						h5 Customer Focus
-						p Work on products that change millions os lives every day.
-					.valor
-						h5 Innovation
-						p Be a part of great stories and big dreams.
-					.valor
-						h5 Results
-						p Join a culture of results oriented by audacious goals.
-					.valor
-						h5 Meritocracy
-						p Grow fast.
-							br
-							| Personal and professional development are real in many ways.
-					.valor
-						h5 Ethics
-						p Own it.
-							br
-							| Ownership is part of us.
-				.underline.underline-accent
-				p Comportamentos & características
-				.table
-					.valor
-						h5 People
-						p Hands on
-							br
-							| Team Work
-							br
-							| Flexibility
-					.valor
-						h5 Customer Focus
-						p Empathy & connection
-							br
-							| Love what you do
-					.valor
-						h5 Innovation
-						p Connected - market and future
-							br
-							| Creative & innovative
-							br
-							| Think lean
-					.valor
-						h5 Results
-						p Driven by results and goals
-							br
-							| Think analytically
-							br
-							| Enjoy adventures
-					.valor
-						h5 Meritocracy
-						p Driven by great and audacious dreams
-							br
-							| Be pioneer
-							br
-							| Keep looking for challenges
-							br
-							| Meritocracy with each other
-					.valor
-						h5 Ethics
-						p Respect
-			section
+				img(src='img/programa-integracao.png')
+			section.full-bg-flat
 				.container.content-50-50
 					.txt-list
 						h2 Movile Journey
 						ul
 							li
-								p Palestras, cursos, visitas aos nossos escritórios, participação em feiras e eventos para alunos do  ensino técnico de Tecnologia.
-								p Nossa proposta é compartilhar conhecimento para que fiquem preparados para futuros desafios profissionais.
-								p Setembro: evento no colégio técnico, com 8 Movilian@s, para desafio de case técnico com 40 participantes!
-								p - Vencedores premiados no escritório da Movile, com roda de bate-papo com ex-estagiários
-								p - Dos 10 melhores colocados, contratamos 4!
+								p Welcome e-mail, Welcome bag, Welcome SMS, Welcome kit, Welcome baloon, Welcome you, Welcome to Movile, Welcome Talk
 					.slider
 						.Wallop.Wallop--slide.Wallop--1
 							.Wallop-list
-								.Wallop-item(style='background-image:url(img/journey1.jpg)')
-								.Wallop-item(style='background-image:url(img/journey2.jpg)')
-								.Wallop-item(style='background-image:url(img/journey3.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/welcome1.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/welcome2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/welcome3.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/welcome4.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/welcome5.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/welcome6.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/welcome7.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/welcome8.png)')
 							button.Wallop-buttonPrevious
 							button.Wallop-buttonNext
-			section.partial-bg-flat
-				.container.content-50-50
-					.img-contain
-						img(src='img/app-print.png')
-					.txt-list
-						h2 Gente Pra Gente
-						ul
-							li
-								p Indicações para nossas vagas vale badge no nosso app!
-							li
-								p Ninguém melhor do que nós mesmos para reconhecer potenciais nov@s Movilian@s!
 			section
 				.centered.container
-						h2 Opportunities
-						p Expandimos as oportunidades para todos os colaboradores do grupo Movile!
+						h2 VIP KIt
+						p Nosso kit de boas vindas para posições executivas e estratégicas!
 						p
 							span Descomplicado e informal
 						.underline.underline-accent
-			section.container.images
-				div
-					img(src='img/opportunities.png')
+			section
+				.container.images
+					div
+						img(src='img/vip-kit.jpg')
+					div
+						img(src='img/vip-kit2.jpg')
 			section.partial-bg-flat
 				.container.content-50-50
 					.slider
 						.Wallop.Wallop--slide.Wallop--2
-							mixin 
 							.Wallop-list
-								.Wallop-item(style='background-image:url(img/cocoaheads1.jpg)')
-								.Wallop-item(style='background-image:url(img/cocoaheads2.jpg)')
-								.Wallop-item(style='background-image:url(img/cocoaheads3.jpg)')
-								.Wallop-item(style='background-image:url(img/cocoaheads4.jpg)')
-								.Wallop-item(style='background-image:url(img/cocoaheads5.jpg)')
+								.Wallop-item(style='background-image:url(img/gd1.jpg)')
+								.Wallop-item(style='background-image:url(img/gd2.jpg)')
+								.Wallop-item(style='background-image:url(img/gd3.jpg)')
+								.Wallop-item(style='background-image:url(img/gd4.jpg)')
+								.Wallop-item(style='background-image:url(img/gd5.jpg)')
+								.Wallop-item(style='background-image:url(img/gd6.jpg)')
+								.Wallop-item(style='background-image:url(img/gd7.jpg)')
+								.Wallop-item(style='background-image:url(img/gd8.jpg)')
+								.Wallop-item(style='background-image:url(img/gd9.jpg)')
+								.Wallop-item(style='background-image:url(img/gd10.jpg)')
+								.Wallop-item(style='background-image:url(img/gd11.jpg)')
+								.Wallop-item(style='background-image:url(img/gd12.jpg)')
+								.Wallop-item(style='background-image:url(img/gd13.jpg)')
+								.Wallop-item(style='background-image:url(img/gd14.jpg)')
+								.Wallop-item(style='background-image:url(img/gd15.jpg)')
+								.Wallop-item(style='background-image:url(img/gd16.jpg)')
+								.Wallop-item(style='background-image:url(img/gd17.jpg)')
+								.Wallop-item(style='background-image:url(img/gd18.jpg)')
+								.Wallop-item(style='background-image:url(img/gd19.jpg)')
+								.Wallop-item(style='background-image:url(img/gd20.jpg)')
+								.Wallop-item(style='background-image:url(img/gd21.jpg)')
 							button.Wallop-buttonPrevious
 							button.Wallop-buttonNext
 					.txt-list
-						h2 Cocoaheads
+						h2 Go Dreamers
 						ul
 							li
-								p Novas edições do evento que agita a comunidade iOS!
+								p Uma agenda de integração especial para noss@s primeir@s Dreamers!
+							li
+								p Interação entre Campinas e São Paulo já nos primeiros dias de estágio
+			section.partial-bg-flat
+				.container.content-50-50
+					.img-contain
+						img(src='img/vip-kit.jpg')
+					.txt-list
+						h2 VIP Kit
+						ul
+							li
+								p Nosso kit de boas vindas para posições executivas e estratégicas!
+			section.container.images
+				div
+					img(src='img/opportunities.png')
 			section
 				.container.content-50-50
 					.txt-list
@@ -191,12 +149,6 @@ html(lang='en')
 					h2 Sponsors
 					p.narrow Nossos 17 estagiários do Mobile Dream se tornaram Sponsors oficiais da Movile em suas universidades, em Campinas e São Paulo
 					.underline.underline-accent
-			section
-				.container.images
-					div
-						img(src='img/sponsors1.png')
-					div
-						img(src='img/sponsors2.png')
 			section.partial-bg-gradient
 				.container.content-50-50
 					.img-gallery
@@ -275,6 +227,6 @@ html(lang='en')
 							button.Wallop-buttonPrevious
 							button.Wallop-buttonNext
 			include ../pug-templates/pilarFooter
-			+footerLinks('compartilhar','receber')
+			+footerLinks('contratar','inspirar')
 		include ../pug-templates/pilarJS
 
