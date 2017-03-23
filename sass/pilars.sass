@@ -317,7 +317,7 @@ footer
 		0%
 			right: 12px
 		100%
-			right: 0pxl
+			right: 0px
 	@keyframes pulsePrev
 		0%
 			left: 12px
@@ -331,7 +331,7 @@ footer
 			border-left: transparent
 			border-bottom: transparent
 		&:hover:after
-			animation: pulseNext 1s infinite alternate
+			animation: pulseNext 0.8s infinite alternate
 	.prev
 		text-align: left
 		padding-left: 40px
@@ -340,7 +340,7 @@ footer
 			border-right: transparent
 			border-top: transparent
 		&:hover:after
-			animation: pulsePrev 1s infinite alternate
+			animation: pulsePrev 0.8s infinite alternate
 @media (max-width: 970px)
 	.hero-bg
 		width: 120vw
@@ -367,6 +367,9 @@ footer
 	.img-gallery
 		width: 140% !important
 @media (max-width: 600px)
+	.title
+		> h1
+			font-size: 25px
 	.title
 		min-height: 0px
 		background-size: contain
@@ -418,8 +421,12 @@ footer
 		.underline
 			margin: 30px auto
 @media (max-width: 430px)
-	h1
-		font-size: 21px
+	.cover
+		h3
+			font-size: 21px
+	.hero-bg
+		left: -16%
+		width: 130vw
 	.cover
 		.underline
 			margin: 20px auto 5px
