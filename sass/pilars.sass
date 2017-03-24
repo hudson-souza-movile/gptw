@@ -45,10 +45,10 @@ header.scrolled
 	transform: rotate(-8deg)
 	transition: none
 section
-	margin-top: 70px
-	margin-bottom: 70px
+	margin-top: 50px
+	margin-bottom: 50px
 	&:last-of-type
-		margin-bottom: -70px
+		margin-bottom: -50px
 .title
 	text-align: center
 	min-height: 320px
@@ -207,12 +207,11 @@ section
 	position: relative
 	&:before
 		position: absolute
-		top: 50%
+		top: 10%
 		left: 0
-		transform: translateY(-50%)
 		content: ''
 		width: 100%
-		height: 70%
+		height: 80%
 		z-index: -1
 		background: $light-gray
 .partial-bg-gradient
@@ -223,13 +222,27 @@ section
 		background-color: $white !important
 	&:before
 		position: absolute
-		top: 15%
+		top: 10%
 		left: 0
 		content: ''
 		width: 100%
-		height: 70%
+		height: 80%
 		z-index: -1
 		background-image: linear-gradient(-90deg, #FF585A 0%, #F857A5 100%)
+	.slider
+		button
+			background: $white
+			&:after
+				border: 1px solid $main-accent
+			&.Wallop-buttonPrevious
+				&:after
+					border-right: transparent
+					border-top: transparent
+			&.Wallop-buttonNext
+				right: -15px
+				&:after
+					border-left: transparent
+					border-bottom: transparent
 .img-contain
 	display: flex
 	align-items: center
@@ -241,6 +254,8 @@ section
 	align-items: center
 	img
 		width: 100%
+	a
+		cursor: pointer
 .img-gallery
 	display: flex
 	flex-wrap: wrap
@@ -273,7 +288,9 @@ section
 		img
 			display: block
 			width: 100%
+			max-width: 600px
 			box-shadow: 0px 4px 6px rgba(0,0,0,0.1)
+			margin: 0 auto
 .photo-wall
 	margin: -70px auto 70px
 	display: flex
@@ -291,6 +308,10 @@ section
 		flex-direction: column
 		justify-content: space-between
 		align-self: stretch
+		img
+			margin-bottom: 20px
+			&:last-of-type
+				margin-bottom: 0px
 .comment
 	margin-top: -40px
 	.underline
