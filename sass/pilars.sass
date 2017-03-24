@@ -217,7 +217,10 @@ section
 		background: $light-gray
 .partial-bg-gradient
 	position: relative
-	color: $white !important
+	*
+		color: $white !important
+	li:before
+		background-color: $white !important
 	&:before
 		position: absolute
 		top: 15%
@@ -402,6 +405,9 @@ footer
 	.cover
 		max-width: 600px
 		padding: 20px
+		display: flex
+		flex-direction: column
+		justify-content: space-around
 	.content-50-50
 		flex-direction: column
 		> div
