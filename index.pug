@@ -20,7 +20,9 @@ html(lang='en')
 				div.menu
 					a(href='javascript:', class='link-selected') Inicio
 					span PILARES:
-					include pug-templates/liItems
+					mixin liItems(pilar)
+						li
+							a(href=pilar+'/')= pilar
 					ul
 						+liItems('contratar')
 						+liItems('receber')
@@ -63,8 +65,8 @@ html(lang='en')
 					label Tudo que fazemos é para algo maior: as pessoas.
 				.videos
 					div
-						a.active-video(href="javascript:")
-							img(src="img/video.png", data-video-name='video1')
+						a.active-video(href="javascript:", data-video-name='make-lives-better', data-video-format='mp4')
+							img(src="videos/make-lives-better.png")
 						div.card
 							h4.card-title o que queremos
 							.underline-accent
@@ -83,22 +85,26 @@ html(lang='en')
 								br
 								| da nossa cultura, do nosso
 								span Jeito Moviliano de Ser 
-						a.active-video(href="javascript:")
-							img(src="img/video.png", data-video-name='video2')
+						a.active-video(href="javascript:", data-video-name='jeito-moviliano', data-video-format='mp4')
+							img(src="videos/jeito-moviliano.png")
 				.last-year
 					label Em 2016, mais uma vez, trabalhamos com um único foco:
 					h3 
 						span tornar a vida d@s noss@s Movilian@s melhor!
 					.underline.underline-center.underline-third-accent
 				.featured-video
-					a.active-video(href="javascript:", data-video-name='video3')
-						img(src="img/video.png")
+					a.active-video(href="javascript:", data-video-name='retrospectiva-2016', data-video-format='mp4')
+						img(src="videos/retrospectiva-2016.png")
 			section.pilares
 				label Muito mais do que processos tradicionais, a Movile se preocupa com a experiência do Movilian@s!
 					h3 
 						span Conheça nossos pilares:
 				.underline.underline-center.underline-second-accent
-				include pug-templates/pilar_card
+				mixin pilarCard(pilar)
+					a(href=pilar+'/')
+						.pilar-card
+							img(src='img/pilares/'+pilar+'.png')
+							p= pilar
 				+pilarCard('contratar')
 				+pilarCard('receber')
 				+pilarCard('inspirar')
@@ -122,6 +128,7 @@ html(lang='en')
 		script(src='js/umbrella.min.js')
 		script(src='js/changeHeader.js')
 		script(src='js/activeMenu.js')
+		script(src='js/activeVideo.js')
 
 
 
