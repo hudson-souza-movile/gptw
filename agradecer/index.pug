@@ -1,0 +1,180 @@
+doctype html
+html(lang='en')
+	head
+		include ../pug-templates/basicHead
+		include ../pug-templates/pilarHead
+		+pilarTitle('Agradecer')
+	body
+		.wrapper
+			.overlay
+			nav
+				div.trigger.trigger-pilar
+					ul
+						li
+						li
+						li
+					span MENU
+				div.menu
+					a(class='link', href='../') Inicio
+					span PILARES:
+					include ../pug-templates/pilar_li_item
+					ul
+						+liItem('contratar','link')
+						+liItem('receber','link')
+						+liItem('inspirar','link')
+						+liItem('falar','link')
+						+liItem('escutar','link')
+						+liItem('agradecer','link-selected')
+						+liItem('desenvolver','link')
+						+liItem('cuidar','link')
+						+liItem('celebrar','link')
+						+liItem('compartilhar','link')
+					include ../pug-templates/pilar_menu_gptw
+			include ../pug-templates/pilarHeader
+			.hero-bg
+			section.title
+				img(src="../img/pilares/agradecer.png")
+				h1 Agradecer
+				.arrow-down
+			.container.cover
+				h3 Carinho especial
+				p Movilianas que participaram da construção da história da Movile e seguiram outros rumos em 2016, receberam carinho especial!
+				.underline.underline-accent
+				.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--1
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/carinho1.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/carinho2.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section.full-bg-flat
+				.container.content-50-50
+					.txt-list
+						h2 Let's Play + To Infitiniy & Beyond
+						ul
+							li
+								p Projetos especiais para o time da PlayKids
+							li
+								p Motivação, propósito e reconhecimento no incrível universo de quem constrói a plataforma número 1 para crianças!
+					.slider
+						.Wallop.Wallop--slide.Wallop--2
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/infinity1.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/infinity2.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/infinity3.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section
+				.container.content-50-50
+					.txt-list
+						h2 Peer Recognition
+						ul
+							li
+								p Uma maneira simples e acessível para praticarmos a meritocracia e o reconhecimento uns com os outros!
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--3
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer3.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer4.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer5.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer6.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer7.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer8.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer9.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer10.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer11.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer12.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer13.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer14.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer15.png)')
+								.Wallop-item.bg-contain
+									a.active-video(href="javascript:", data-video-path='../inspirar/videos/peer16', data-video-format='mov')
+										img.shadow(src="../inspirar/videos/peer16.png")
+								.Wallop-item.bg-contain
+									a.active-video(href="javascript:", data-video-path='../inspirar/videos/peer17', data-video-format='mp4')
+										img.shadow(src="../inspirar/videos/peer17.png")
+								.Wallop-item.bg-contain
+									a.active-video(href="javascript:", data-video-path='../inspirar/videos/peer18', data-video-format='mp4')
+										img.shadow(src="../inspirar/videos/peer18.png")
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section.partial-bg-gradient
+				.container.content-50-50
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--4
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms2.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms3.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms4.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms5.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms6.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms7.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms8.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms8.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms10.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms11.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms12.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms13.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms14.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms15.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms16.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/game-jms1.jpg)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					.txt-list
+						h2 Game JMS
+						ul
+							li
+								p Maior autonomia e transparência para tod@s @s Movilian@s!
+							li
+								p Uma nova versão do nosso Jeito Moviliano de Ser!
+									br
+									| O mundo é mobile!
+			section
+				.container.content-50-50
+					.txt-list
+						h2 Aniversário de Movile
+						ul
+							li
+								p Pela primeira vez na Movile, fizemos uma ação para celebrar o tempo de casa de Movilian@s!
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--5
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer3.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer4.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer5.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer6.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer7.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer8.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer9.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer10.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer11.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer12.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer13.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer14.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer15.png)')
+								.Wallop-item.bg-contain
+									a.active-video(href="javascript:", data-video-path='../inspirar/videos/peer16', data-video-format='mov')
+										img.shadow(src="../inspirar/videos/peer16.png")
+								.Wallop-item.bg-contain
+									a.active-video(href="javascript:", data-video-path='../inspirar/videos/peer17', data-video-format='mp4')
+										img.shadow(src="../inspirar/videos/peer17.png")
+								.Wallop-item.bg-contain
+									a.active-video(href="javascript:", data-video-path='../inspirar/videos/peer18', data-video-format='mp4')
+										img.shadow(src="../inspirar/videos/peer18.png")
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+
+
+
+
+
+
+			include ../pug-templates/pilarFooter
+			+footerLinks('escutar','desenvolver')
+		include ../pug-templates/pilarJS
+
