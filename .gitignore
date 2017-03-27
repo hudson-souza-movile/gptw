@@ -1,5 +1,7 @@
 README.md
 .sass-cache/
-videos/
-*/videos/
+videos/*.mp4
+*/videos/*.mp4
+*/videos/*.mov
+*/videos/*.m4v
 PDF.psd
