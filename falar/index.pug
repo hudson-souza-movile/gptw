@@ -1,0 +1,155 @@
+doctype html
+html(lang='en')
+	head
+		include ../pug-templates/basicHead
+		include ../pug-templates/pilarHead
+		+pilarTitle('Falar')
+	body
+		.wrapper
+			.overlay
+			nav
+				div.trigger.trigger-pilar
+					ul
+						li
+						li
+						li
+					span MENU
+				div.menu
+					a(class='link', href='../') Inicio
+					span PILARES:
+					include ../pug-templates/pilar_li_item
+					ul
+						+liItem('contratar','link')
+						+liItem('receber','link')
+						+liItem('inspirar','link')
+						+liItem('falar','link-selected')
+						+liItem('escutar','link')
+						+liItem('agradecer','link')
+						+liItem('desenvovler','link')
+						+liItem('cuidar','link')
+						+liItem('celebrar','link')
+						+liItem('compartilhar','link')
+					include ../pug-templates/pilar_menu_gptw
+			include ../pug-templates/pilarHeader
+			.hero-bg
+			section.title
+				img(src="../img/pilares/contratar.png")
+				h1 Falar
+				.arrow-down
+			.container.cover
+				h3 Guide Institucional
+				p Um espaço aberto a tod@s Movilian@s com materiais institucionais fundamentais.
+				.underline.underline-accent
+				img(src='img/guide1.png')
+			section
+				.container.content-50-50
+					.txt-list
+						h2 Programa de Onboarding
+						ul
+							li
+								p Welcome e-mail, Welcome bag, Welcome SMS, Welcome kit, Welcome baloon, Welcome you, Welcome to Movile, Welcome Talk
+					.slider
+						.Wallop.Wallop--slide.Wallop--1
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/welcome1.png)')
+								.Wallop-item.Wallop-item--current.bg-contain(style='background-image:url(img/welcome2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/welcome3.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/welcome4.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/welcome5.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/welcome6.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/welcome7.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/welcome8.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section.partial-bg-flat
+				.container.content-50-50
+					.img-full
+						a.active-video(href="javascript:", data-video-name='welcome-dreamers', data-video-format='mov')
+							img.shadow(src="videos/welcome-dreamers.png")
+					.txt-list
+						h2 Aprovação Comemorável 
+						ul
+							li
+								p Pais, amigos, amigas, namorados, namoradas… nada mais marcante do que alguém tão significativo para anunciar a aprovação no nosso programa de estágio!
+			section
+				.centered.container
+						h2 VIP Kit
+						p Nosso kit de boas vindas para posições executivas e estratégicas!
+						.underline.underline-accent
+			section
+				.container.images
+					div
+						img(src='img/vip-kit.jpg')
+					div
+						img(src='img/vip-kit2.jpg')
+			section.partial-bg-gradient
+				.container.content-50-50
+					.slider
+						.Wallop.Wallop--slide.Wallop--2
+							.Wallop-list
+								.Wallop-item(style='background-image:url(img/gd1.jpg)')
+								.Wallop-item(style='background-image:url(img/gd2.jpg)')
+								.Wallop-item(style='background-image:url(img/gd3.jpg)')
+								.Wallop-item(style='background-image:url(img/gd4.jpg)')
+								.Wallop-item(style='background-image:url(img/gd5.jpg)')
+								.Wallop-item(style='background-image:url(img/gd6.jpg)')
+								.Wallop-item(style='background-image:url(img/gd7.jpg)')
+								.Wallop-item(style='background-image:url(img/gd8.jpg)')
+								.Wallop-item(style='background-image:url(img/gd9.jpg)')
+								.Wallop-item(style='background-image:url(img/gd10.jpg)')
+								.Wallop-item(style='background-image:url(img/gd11.jpg)')
+								.Wallop-item(style='background-image:url(img/gd12.jpg)')
+								.Wallop-item(style='background-image:url(img/gd13.jpg)')
+								.Wallop-item(style='background-image:url(img/gd14.jpg)')
+								.Wallop-item(style='background-image:url(img/gd15.jpg)')
+								.Wallop-item(style='background-image:url(img/gd16.jpg)')
+								.Wallop-item(style='background-image:url(img/gd17.jpg)')
+								.Wallop-item(style='background-image:url(img/gd18.jpg)')
+								.Wallop-item(style='background-image:url(img/gd19.jpg)')
+								.Wallop-item(style='background-image:url(img/gd20.jpg)')
+								.Wallop-item(style='background-image:url(img/gd21.jpg)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					.txt-list
+						h2 Go Dreamers
+						ul
+							li
+								p Uma agenda de integração especial para noss@s primeir@s Dreamers!
+							li
+								p Interação entre Campinas e São Paulo já nos primeiros dias de estágio
+			section
+				.container.content-50-50
+					.txt-list
+						h2 Welcome back, Tharles
+						ul
+							li
+								p O retorno de um expatriado é motivo de celebração especial no time!
+					.slider
+						.Wallop.Wallop--slide.Wallop--3
+							.Wallop-list
+								.Wallop-item(style='background-image:url(img/tharles1.jpg)')
+								.Wallop-item(style='background-image:url(img/tharles2.jpg)')
+								.Wallop-item(style='background-image:url(img/tharles3.jpg)')
+								.Wallop-item
+									img(src="img/tharles4.gif")
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section.full-bg-flat
+				.container.content-50-50
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--4
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/wd1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/wd2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/wd3.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					.txt-list
+						h2 Welcome, Dreamers!
+						ul
+							li
+								p Estagiári@s do Mobile Dream 2016 receberam livro inspirador e carta do time de Gente e, ainda, foram convidad@s para nossa festa de fim de ano!
+			include ../pug-templates/pilarFooter
+			+footerLinks('inspirar','escutar')
+		include ../pug-templates/pilarJS
+
