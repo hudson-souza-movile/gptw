@@ -1,0 +1,284 @@
+doctype html
+html(lang='en')
+	head
+		include ../pug-templates/basicHead
+		include ../pug-templates/pilarHead
+		+pilarTitle('Desenvolver')
+	body
+		.wrapper
+			.overlay
+			nav
+				div.trigger.trigger-pilar
+					ul
+						li
+						li
+						li
+					span MENU
+				div.menu
+					a(class='link', href='../') Inicio
+					span PILARES:
+					include ../pug-templates/pilar_li_item
+					ul
+						+liItem('contratar','link')
+						+liItem('receber','link')
+						+liItem('inspirar','link')
+						+liItem('falar','link')
+						+liItem('escutar','link')
+						+liItem('agradecer','link')
+						+liItem('desenvolver','link-selected')
+						+liItem('cuidar','link')
+						+liItem('celebrar','link')
+						+liItem('compartilhar','link')
+					include ../pug-templates/pilar_menu_gptw
+			include ../pug-templates/pilarHeader
+			.hero-bg
+			section.title
+				img(src="../img/pilares/desenvolver.png")
+				h1 Desenvolver
+				.arrow-down
+			.container.cover
+				h3 Conhecimento compartilhado
+				//- p Disponibilizamos revistas que abordam assuntos relacionados ao mercado que estamos inseridos em todos os escritórios para o livre acesso de Movilian@s
+				.underline.underline-accent
+				a.active-video(href="javascript:", data-video-path='videos/assinatura3', data-video-format='mov')
+					img.shadow(src="videos/assinatura-thumb.png")
+			section
+				.container.content-50-50
+					.txt-list
+						h2 Assinatura de jornais, revistas e livros
+						ul
+							li
+								p Disponibilizamos revistas que abordam assuntos relacionados ao mercado que estamos inseridos em todos os escritórios para o livre acesso de Movilian@s
+					.img-full
+						img.shadow(src="img/assinatura2.jpg")
+			section.partial-bg-flat
+				.container.content-50-50
+					.txt-list
+						h2 Management Feedback Survey
+							ul
+								li
+									p Colaborador@s da PlayKids puderam avaliar melhor e mais detalhadamente sua liderança
+					.slider
+						.Wallop.Wallop--slide.Wallop--1
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/management1.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/management2.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/management3.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/management4.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/management5.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/management6.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/management7.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/management8.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section
+				.centered.container
+						h2 Opportunities
+						p Expandimos as oportunidades para todos os colaboradores do grupo Movile!
+						p
+							span Descomplicado e informal
+						.underline.underline-accent
+			section.container.images
+				div
+					img(src='../contratar/img/opportunities.png')
+			section.partial-bg-flat
+				.container.content-50-50
+					.slider
+						.Wallop.Wallop--slide.Wallop--2
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/1-11.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/1-12.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/1-13.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/1-14.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/1-15.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/1-16.png)')
+								.Wallop-item.bg-contain
+									a(href='img/1-17.pdf', target='blank')
+										img(src='img/1-17.png')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					.txt-list
+						h2 1:1
+						ul
+							li
+								p A prática do 1:1 tem como principal objetivo aproximar gestores de liderados, criando um fórum específico para se falar de desenvolvimento e de todos os aspectos que envolvem a vida d@s Movilian@s.
+			section
+				.container.content-50-50
+					.txt-list
+						h2 MyAcademy
+						ul
+							li
+								p A parceria com o grupo Naspers lançou a plataforma de e-learning MyAcademy onde Movilian@s possuem acesso a mais de 40.000 conteúdos online abordando os mais diversos temas
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--3
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/my-academy1.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/my-academy2.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/my-academy3.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section.full-bg-flat
+				.container.content-50-50
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--4
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/media-training1.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/media-training2.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/media-training3.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/media-training4.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/media-training5.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					.txt-list
+						h2 Media Training
+						ul
+							li
+								p Movilian@s que participaram de eventos ou entrevistas participaram do media training preparado pela área de Comunicação, independente de nível hierárquico
+			section
+				.container.content-50-50
+					.txt-list
+						h2 Mobile Dream - Mesas Redondas
+						ul
+							li
+								p Com o objetivo de desenvolver os jovens talentos através da uma visão multifuncional do negócio, desenvolvemos mesas redondas, com diversos profissionais, mensalmente, de fevereiro a julho
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--5
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/mesa-redonda1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/mesa-redonda2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/mesa-redonda3.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/mesa-redonda4.jpg)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section.partial-bg-gradient
+				.container.content-50-50
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--6
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford1.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford2.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					.txt-list
+						h2 Stanford Ignite
+							ul
+								li
+									p O curso de altíssima reputação da renomada universidade californiana trouxe ao Moviliano Filipe uma oportunidade única!
+			section
+				.container.content-50-50
+					.txt-list
+						h2 Stanford Executive Program
+						ul
+							li
+								p Eduardo, um dos co-fundadores da Movile, conquistou o sonho de participar de um curso que conciliasse uma abordagem altamente estratégica e inovação, em total alinhamento com nossa cultura
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--7
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive3.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive4.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive5.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive6.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive7.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive8.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive9.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive10.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive11.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive12.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive13.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive14.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive15.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/stanford-executive16.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section.partial-bg-flat
+				.container.content-50-50
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--8
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/academia-movile1.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/academia-movile2.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/academia-movile3.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/academia-movile4.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/academia-movile5.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/academia-movile6.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/academia-movile7.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					.txt-list
+						h2 Calendário da Academia Movile 
+						ul
+							li
+								p Todos os canais de comunicação interna da Movile divulgam, mensalmente, o calendário de workshops e treinamentos da Academia Movile
+			section
+				.container.content-50-50
+					.txt-list
+						h2 Stanford Executive Program
+						ul
+							li
+								p Eduardo, um dos co-fundadores da Movile, conquistou o sonho de participar de um curso que conciliasse uma abordagem altamente estratégica e inovação, em total alinhamento com nossa cultura
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--9
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/gente-firme-mundo1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/gente-firme-mundo2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/gente-firme-mundo3.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/gente-firme-mundo4.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/gente-firme-mundo5.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/gente-firme-mundo6.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/gente-firme-mundo7.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/gente-firme-mundo8.jpg)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section.centered
+				.container
+					h2 TechTalks
+					p.narrow Encontros e grupos de troca de conhecimento acontecem organicamente.
+					p
+						span Promovidos pel@s própri@s Movilian@s!
+					.underline.underline-accent
+			section.centered
+				.container.photo-wall
+					div
+						img(src='../inspirar/img/techtalks3.png')
+					div.multi-photos
+						img(src='../inspirar/img/techtalks1.png')
+						img(src='../inspirar/img/techtalks2.png')
+			section.partial-bg-gradient
+				.container.content-50-50
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--10
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/top-talent1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/top-talent2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/top-talent2.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					.txt-list
+						h2 Top Talent
+							ul
+								li
+									p Em 2016 os Top Talents consolidaram o conteúdo teórico a que foram imersos no ano anterior, desenvolvendo conclusões e planos de ação para o desafio de cada grupo
+			section
+				.centered.container
+						h2 Giftwork
+						p.narrow 20 líderes Movilian@s participaram da jornada Giftwork, ministrada pelo time do Great Place to Work, e acompanhada pelo time de Gente.
+						p.narrow Esse foi um marco do desenvolvimento da liderança da Movile, na busca incessante pela construção de uma empresa cada vez mais incrível, levando reconhecimento e inspiração a cada Movilian@, dia após dia
+						.underline.underline-accent
+			section
+				.container.images
+					div
+						img(src='../inspirar/img/giftwork1.jpg')
+					div
+						img(src='../inspirar/img/giftwork2.jpg')
+			section
+				.container.images
+					div
+						img(src='../inspirar/img/giftwork3.jpg')
+					div
+						img(src='../inspirar/img/giftwork4.jpg')
+			include ../pug-templates/pilarFooter
+			+footerLinks('agradecer','cuidar')
+		include ../pug-templates/pilarJS
+
