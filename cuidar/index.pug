@@ -1,0 +1,462 @@
+doctype html
+html(lang='en')
+	head
+		include ../pug-templates/basicHead
+		include ../pug-templates/pilarHead
+		+pilarTitle('Cuidar')
+	body
+		.wrapper
+			.overlay
+			nav
+				div.trigger.trigger-pilar
+					ul
+						li
+						li
+						li
+					span MENU
+				div.menu
+					a(class='link', href='../') Inicio
+					span PILARES:
+					include ../pug-templates/pilar_li_item
+					ul
+						+liItem('contratar','link')
+						+liItem('receber','link')
+						+liItem('inspirar','link')
+						+liItem('falar','link')
+						+liItem('escutar','link')
+						+liItem('agradecer','link')
+						+liItem('desenvolver','link')
+						+liItem('cuidar','link-selected')
+						+liItem('celebrar','link')
+						+liItem('compartilhar','link')
+					include ../pug-templates/pilar_menu_gptw
+			include ../pug-templates/pilarHeader
+			.hero-bg
+			section.title
+				img(src="../img/pilares/cuidar.png")
+				h1 Cuidar
+				.arrow-down
+			.container.cover
+				h3 Happiness Survey
+				p Antes do Let's Play e do Infinity & Beyond, 43 colaboradores responderam a um formulário medindo o nível de satisfação em trabalhar na PlayKids, o Happiness Survey.
+				.underline.underline-accent
+				img(src='img/happinness-survey.png')
+			section
+				.container.content-50-50
+					.img-full
+						img(src='img/cristaos.png')
+					.txt-list
+						h2 Grupo de cristãos
+						ul
+							li
+								p 5 Movilianos e Movilianos deram início a um grupo de cristãos, que se reúne semanalmente no escritório da Movile em Campinas, para compartilhar dificuldades e orarem juntos.
+			section.partial-bg-flat
+				.container.content-50-50
+					.txt-list
+						h2 Programa de Diversidade
+						ul
+							li
+								p O RESPECT é uma iniciativia d@s Movilian@s, com foco em questões sociais relacionadas à diversidade e minorias.
+							li
+								p Os temas principais são: LGBT, raciais, feminismo, religião e PCD.
+					.slider
+						.Wallop.Wallop--slide.Wallop--1
+							.Wallop-list
+								.Wallop-item
+									a.active-video(href="javascript:", data-video-path='videos/programa-diversidade', data-video-format='mp4')
+										img.shadow(src="videos/programa-diversidade.png")
+								.Wallop-item(style='background-image:url(img/programa-diversidade1.png)')
+								.Wallop-item(style='background-image:url(img/programa-diversidade2.jpg)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section
+				.container.content-50-50
+					.slider
+						.Wallop.Wallop--slide.Wallop--2
+							.Wallop-list
+								.Wallop-item(style='background-image:url(img/mudanca1.png)')
+								.Wallop-item(style='background-image:url(img/mudanca2.jpg)')
+								.Wallop-item(style='background-image:url(img/mudanca3.jpg)')
+								.Wallop-item(style='background-image:url(img/mudanca4.png)')
+								.Wallop-item(style='background-image:url(img/mudanca5.jpg)')
+								.Wallop-item(style='background-image:url(img/mudanca6.png)')
+								.Wallop-item(style='background-image:url(img/mudanca7.png)')
+								.Wallop-item(style='background-image:url(img/mudanca8.jpg)')
+								.Wallop-item(style='background-image:url(img/mudanca9.jpg)')
+								.Wallop-item(style='background-image:url(img/mudanca10.png)')
+								.Wallop-item(style='background-image:url(img/mudanca11.jpg)')
+								.Wallop-item(style='background-image:url(img/mudanca12.jpg)')
+								.Wallop-item(style='background-image:url(img/mudanca13.jpg)')
+								.Wallop-item(style='background-image:url(img/mudanca14.jpg)')
+								.Wallop-item(style='background-image:url(img/mudanca15.jpg)')
+								.Wallop-item(style='background-image:url(img/mudanca16.jpg)')
+								.Wallop-item(style='background-image:url(img/mudanca17.jpg)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					.txt-list
+						h2 Mudanças dos escritórios
+						ul
+							li
+								p Para evitar qualquer estresse e cuidar de cada detalhe, planejamos as mudanças em nossos escritórios gerando o menor impacto na vida de Movilian@s.
+			section.partial-bg-gradient
+				.container.content-50-50
+					.txt-list
+						h2 Novos escritórios
+						ul
+							li
+								p Mudamos, reformamos, tudo para inspirar ainda mais noss@s Movilian@s com escritórios incríveis!
+							li
+								p Movilian@s participaram de comitê de decoração, contribuindo com ideias para novos espaços
+					.slider
+						.Wallop.Wallop--slide.Wallop--3
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office3.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office4.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office5.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office6.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office7.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office8.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office9.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office10.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office11.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office12.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office13.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office14.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office15.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office16.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office17.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office18.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office19.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office20.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office21.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office22.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office23.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office24.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office25.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office26.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office27.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office28.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office29.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office30.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/new-office30.jpg)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section
+				.container.content-50-50
+					.txt-list
+						h2 Código de ética e conduta empresarial!
+						ul
+							li
+								p Revisamos nosso Código de ética e conduta empresarial e disponiblizamos no Guide Institucional.
+							li
+								p E, ainda, anexamos o Código de ética e conduta empresarial do nosso principal investidor, o grupo Naspers.
+							li
+								p Todo o material foi disponibilizado em 3 idiomas: português, inglês e espanhol!
+					.slider
+						.Wallop.Wallop--slide.Wallop--4
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/codigo1.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/codigo2.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/codigo3.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../escutar/img/codigo4.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section.full-bg-flat
+				.container.content-50-50
+					.slider
+						.Wallop.Wallop--slide.Wallop--5
+							.Wallop-list
+								.Wallop-item(style='background-image:url(img/hero-club1.jpg)')
+								.Wallop-item(style='background-image:url(img/hero-club2.jpg)')
+								.Wallop-item(style='background-image:url(img/hero-club3.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hero-club4.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					.txt-list
+						h2 Hero Club
+						ul
+							li
+								p O engajamento d@s Movilian@s no Game JMS gera Movile Coins que podem ser trocadas por produtos da Movile na Hero Club todos os meses.
+			section
+				.container.content-50-50
+					.txt-list
+						h2 Happy hour temático
+						ul
+							li
+								p Todos os meses fazemos happy hours em Campinas, São Paulo e Rio de Janeiro, e, em 2016, fizemos celebrações temáticas, dentro do escritório.
+					.slider
+						.Wallop.Wallop--slide.Wallop--6
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/hh1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh3.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh4.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh5.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh6.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh7.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh8.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh9.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh10.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh11.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh12.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh13.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh14.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh15.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh16.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh17.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh18.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh19.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh20.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh21.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh22.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh23.jpeg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh24.jpeg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh25.jpeg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh26.jpeg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh27.jpeg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/hh28.jpg)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section.partial-bg-gradient
+				.container.content-50-50
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--7
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/we-care1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/we-care2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/we-care3.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/we-care4.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/we-care5.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/we-care6.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/we-care7.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/we-care8.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/we-care9.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/we-care10.jpg)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					.txt-list
+						h2 I do. We care.
+						ul
+							li
+								p Iniciativa dos times de Facilities e Design, com apoio da área de Engagement.
+							li
+								p Ações para melhorar o ambiente de trabalho e impactar positivamente a vida das pessoas.
+			section
+				.centered.container
+						h2 Telão com a programação Olímpica
+						p Telões nos escritórios para @s Movilian@s acompanharem a programação dos Jogos Olímpicos do Rio de Janeiro!
+						.underline.underline-accent
+			section
+				.container.images
+					div
+						img(src='img/telao-olimpiadas1.jpg')
+					div
+						img(src='img/telao-olimpiadas2.jpg')
+			section
+				.container.images
+					div
+						img(src='img/telao-olimpiadas3.png')
+					div
+						img(src='img/telao-olimpiadas4.png')
+			section.full-bg-flat
+				.centered.container
+					h2 Datas comemorativas
+					p.narrow Cada data comemorativa é pensada com muito cuidado e carinho para celebrar com Movilian@s!
+				.container.content-50-50
+					.txt-list
+						h2 Dia Internacional da Mulher
+						ul
+							li
+								p Todos foram convidados a votar nas Movilianas que mais os inspiram em cada valor da Movile.
+							li
+								p Homenagens e presentes para as Movilianas!
+							li
+								p Vídeo com a blogueira Camila Achutti sobre mulheres na computaçãos!
+					.slider
+						.Wallop.Wallop--slide.Wallop--8
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_da_mulher1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_da_mulher2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_da_mulher3.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_da_mulher4.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_da_mulher5.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_da_mulher6.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_da_mulher7.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_da_mulher8.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_da_mulher9.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_da_mulher10.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_da_mulher11.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_da_mulher12.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_da_mulher13.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_da_mulher14.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+				.container.content-50-50
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--9
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_das_maes1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_das_maes2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_das_maes3.png)')
+								.Wallop-item
+									a.active-video(href="javascript:", data-video-path='videos/d-dia_das_maes4', data-video-format='mov')
+										img.shadow(src="videos/d-dia_das_maes4.png")
+								.Wallop-item
+									a.active-video(href="javascript:", data-video-path='videos/d-dia_das_maes5', data-video-format='mov')
+										img.shadow(src="videos/d-dia_das_maes5.png")
+								.Wallop-item
+									a.active-video(href="javascript:", data-video-path='videos/d-dia_das_maes6', data-video-format='mov')
+										img.shadow(src="videos/d-dia_das_maes6.png")
+								.Wallop-item
+									a.active-video(href="javascript:", data-video-path='videos/d-dia_das_maes7', data-video-format='mov')
+										img.shadow(src="videos/d-dia_das_maes7.png")
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					.txt-list
+						h2 Dia das Mães
+						ul
+							li
+								p - Vídeo com filh@s no Movile@Facebook e um presente para carregar seu amor por aí: uma bolsa térmica com a foto da Moviliana com filh@s.
+				.container.content-50-50
+					.txt-list
+						h2 Dia dos Pais
+						ul
+							li
+								p Desenvolvemos um diário entre pai e filh@ para nossos Movilianos construírem memórias com seus pequenos e distribuímos cartões para tod@s @s Movilian@s homenagearem seus pais!
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--10
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_dos_pais1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_dos_pais2.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_dos_pais3.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_dos_pais1.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_dos_pais2.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_dos_pais3.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+				.container.content-50-50
+					.slider
+						.Wallop.Wallop--slide.Wallop--11
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/d-outubro_magenta1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-outubro_magenta2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-outubro_magenta3.jpg)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					.txt-list
+						h2 Outubro Magenta
+						ul
+							li
+								p Bate-papo sem rótulos entre todos @s Movilian@s, liderado por 4 homens, para discutir sobre machismo.
+				.container.content-50-50
+					.txt-list
+						h2 Novembro Azul
+						ul
+							li
+								p Bate-papo sem rótulos entre todos @s Movilian@s, liderado por 4 homens, para discutir sobre machismo.
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--12
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/d-novembro_azul1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-novembro_azul2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-novembro_azul3.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-novembro_azul1.jpg)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			section.centered
+				.container
+					h2 Parcerias
+					p.narrow Em 2016 conseguimos várias parcerias com restaurantes, escola de idiomas, universidades, centros educacionais, consultorias, a fim de proporcionar descontos para Movilian@s!
+					.underline.underline-accent
+			section
+				.container.images
+					div
+						img(src='img/parcerias1.jpg')
+					div
+						img(src='img/parcerias2.jpg')
+			section
+				.container.images
+					div
+						img(src='img/parcerias4.png')
+					div
+						img(src='img/parcerias3.jpg')
+			section.full-bg-gradient
+				.centered.container
+					h2 Projeto Verão
+					p.narrow Durante o período do horário de herão , incentivamos que Movilian@s aproveitem os dias de sol para cuidar do corpo, fazer atividades físicas e aproveitar o verão fora do escritório
+				.container.content-50-50
+					.txt-list
+						h2 Sexta Curta
+						ul
+							li
+								p Toda sexta-feira, das 16h às 16h30, incentivamos Movilian@s a começarem o final de semana mais cedo
+					.slider
+						.Wallop.Wallop--slide.Wallop--13
+							.Wallop-list
+								.Wallop-item
+									a.active-video(href="javascript:", data-video-path='videos/projeto-verao-sexta1', data-video-format='mp4')
+										img.shadow(src="videos/projeto-verao-sexta1.png")
+								.Wallop-item
+									a.active-video(href="javascript:", data-video-path='videos/projeto-verao-sexta2', data-video-format='mp4')
+										img.shadow(src="videos/projeto-verao-sexta2.png")
+								.Wallop-item
+									a.active-video(href="javascript:", data-video-path='videos/projeto-verao-sexta3', data-video-format='mp4')
+										img.shadow(src="videos/projeto-verao-sexta3.png")
+								.Wallop-item
+									a.active-video(href="javascript:", data-video-path='videos/projeto-verao-sexta4', data-video-format='mp4')
+										img.shadow(src="videos/projeto-verao-sexta4.png")
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+				.container.content-50-50
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--14
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_das_maes1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_das_maes2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_das_maes3.png)')
+								.Wallop-item
+									a.active-video(href="javascript:", data-video-path='videos/d-dia_das_maes4', data-video-format='mov')
+										img.shadow(src="videos/d-dia_das_maes4.png")
+								.Wallop-item
+									a.active-video(href="javascript:", data-video-path='videos/d-dia_das_maes5', data-video-format='mov')
+										img.shadow(src="videos/d-dia_das_maes5.png")
+								.Wallop-item
+									a.active-video(href="javascript:", data-video-path='videos/d-dia_das_maes6', data-video-format='mov')
+										img.shadow(src="videos/d-dia_das_maes6.png")
+								.Wallop-item
+									a.active-video(href="javascript:", data-video-path='videos/d-dia_das_maes7', data-video-format='mov')
+										img.shadow(src="videos/d-dia_das_maes7.png")
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					.txt-list
+						h2 Dia das Mães
+						ul
+							li
+								p - Vídeo com filh@s no Movile@Facebook e um presente para carregar seu amor por aí: uma bolsa térmica com a foto da Moviliana com filh@s.
+				.container.content-50-50
+					.txt-list
+						h2 Dia dos Pais
+						ul
+							li
+								p Desenvolvemos um diário entre pai e filh@ para nossos Movilianos construírem memórias com seus pequenos e distribuímos cartões para tod@s @s Movilian@s homenagearem seus pais!
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--15
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_dos_pais1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_dos_pais2.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_dos_pais3.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_dos_pais1.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_dos_pais2.png)')
+								.Wallop-item.bg-contain(style='background-image:url(img/d-dia_dos_pais3.png)')
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+					
+			
+		
+
+			include ../pug-templates/pilarFooter
+			+footerLinks('receber','falar')
+		include ../pug-templates/pilarJS
+
