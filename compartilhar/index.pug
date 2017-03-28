@@ -1,0 +1,83 @@
+doctype html
+html(lang='en')
+	head
+		include ../pug-templates/basicHead
+		include ../pug-templates/pilarHead
+		+pilarTitle('Compartilhar')
+	body
+		.wrapper
+			.overlay
+			nav
+				div.trigger.trigger-pilar
+					ul
+						li
+						li
+						li
+					span MENU
+				div.menu
+					a(class='link', href='../') Inicio
+					span PILARES:
+					include ../pug-templates/pilar_li_item
+					ul
+						+liItem('contratar','link')
+						+liItem('receber','link')
+						+liItem('inspirar','link')
+						+liItem('falar','link')
+						+liItem('escutar','link')
+						+liItem('agradecer','link')
+						+liItem('desenvolver','link')
+						+liItem('cuidar','link')
+						+liItem('celebrar','link')
+						+liItem('compartilhar','link-selected')
+					include ../pug-templates/pilar_menu_gptw
+			include ../pug-templates/pilarHeader
+			.hero-bg
+			section.title
+				img(src="../img/pilares/compartilhar.png")
+				h1 Compartilhar
+				.arrow-down
+			.container.cover
+				h3 Efetivações Mobile Dream
+				p A efetivação dos estagiários da primeira edição do Mobile Dream foi mais uma experiência incrível a estes jovens talentos. E criatividade não faltou!
+				.underline.underline-accent
+
+			section
+				.container.content-50-50
+					.txt-list
+						h2 Peer Recognition
+						ul
+							li
+								p Uma maneira simples e acessível para praticarmos a meritocracia e o reconhecimento uns com os outros!
+					.slider.slider-medium
+						.Wallop.Wallop--slide.Wallop--1
+							.Wallop-list
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer1.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer2.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer3.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer4.jpg)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer5.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer6.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer7.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer8.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer9.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer10.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer11.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer12.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer13.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer14.png)')
+								.Wallop-item.bg-contain(style='background-image:url(../inspirar/img/peer15.png)')
+								.Wallop-item.bg-contain
+									a.active-video(href="javascript:", data-video-path='../inspirar/videos/peer16', data-video-format='mov')
+										img.shadow(src="../inspirar/videos/peer16.png")
+								.Wallop-item.bg-contain
+									a.active-video(href="javascript:", data-video-path='../inspirar/videos/peer17', data-video-format='mp4')
+										img.shadow(src="../inspirar/videos/peer17.png")
+								.Wallop-item.bg-contain
+									a.active-video(href="javascript:", data-video-path='../inspirar/videos/peer18', data-video-format='mp4')
+										img.shadow(src="../inspirar/videos/peer18.png")
+							button.Wallop-buttonPrevious
+							button.Wallop-buttonNext
+			include ../pug-templates/pilarFooter
+			+footerLinks('compartilhar','receber')
+		include ../pug-templates/pilarJS
+
